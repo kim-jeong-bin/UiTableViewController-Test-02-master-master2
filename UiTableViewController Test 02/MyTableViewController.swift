@@ -40,11 +40,18 @@ class MyTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
         let optionMenu = UIAlertController(title: "전화걸기 : " + foodStoreNames[indexPath.row], message: foodStoreTel[indexPath.row], preferredStyle: .actionSheet)
         let callAction = UIAlertAction(title: "전화를 거시겠습니까!",
                                        style: .default){
                                         (action: UIAlertAction) -> Void in
-                                        print("전화를 걸고 있습니다.!! 뚜뚜!!!")
+                                        let alertMessage = UIAlertController(title : "알립니다", message: " 전화를 거는중!!", preferredStyle: .alert)
+                                        alertMessage.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                                        self.present(alertMessage, animated: true, completion: nil)
+                                        
+                                        
+                                        
         }
         
         let cancelAction = UIAlertAction(title: "취소", style: .cancel, handler: nil)
