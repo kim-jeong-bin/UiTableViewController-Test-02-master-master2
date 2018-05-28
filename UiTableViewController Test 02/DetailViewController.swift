@@ -10,9 +10,14 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var cellImageView: UIImageView!
+    var cellImage: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        cellImageView.image = UIImage(named: cellImage)
+        
+        
         // Do any additional setup after loading the view.
     }
 

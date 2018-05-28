@@ -121,6 +121,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nTX-zn-Ua1"/>
                     </view>
+                    <connections>
+                        <outlet property="cellImageView" destination="Qgf-fx-Kro" id="yhP-wM-toV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4G5-on-24P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
