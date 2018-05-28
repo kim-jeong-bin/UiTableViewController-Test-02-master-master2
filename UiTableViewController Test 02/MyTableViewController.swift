@@ -88,36 +88,36 @@ class MyTableViewController: UITableViewController {
     */
 
     
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            foodStoreNames.remove(at: indexPath.row)
-            foodStoreAddress.remove(at: indexPath.row)
-            foodStoreTel.remove(at: indexPath.row)
-            foodStoreThumbnail.remove(at: indexPath.row)
-            
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        }
-    }
-    
-
-    
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-        let tmp1 = foodStoreNames[to.row]
-        foodStoreNames[to.row] = foodStoreNames[fromIndexPath.row]
-        foodStoreNames[fromIndexPath.row] = tmp1
-        
-        let tmp2 = foodStoreThumbnail[to.row]
-        foodStoreThumbnail[to.row] = foodStoreThumbnail[fromIndexPath.row]
-        foodStoreThumbnail[fromIndexPath.row] = tmp2
-        
-    
-
-
-    }
+//    // Override to support editing the table view.
+//    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+//        if editingStyle == .delete {
+//            // Delete the row from the data source
+//            foodStoreNames.remove(at: indexPath.row)
+//            foodStoreAddress.remove(at: indexPath.row)
+//            foodStoreTel.remove(at: indexPath.row)
+//            foodStoreThumbnail.remove(at: indexPath.row)
+//
+//            tableView.deleteRows(at: [indexPath], with: .fade)
+//        }
+//    }
+//
+//
+//
+//    // Override to support rearranging the table view.
+//    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
+//
+//        let tmp1 = foodStoreNames[to.row]
+//        foodStoreNames[to.row] = foodStoreNames[fromIndexPath.row]
+//        foodStoreNames[fromIndexPath.row] = tmp1
+//
+//        let tmp2 = foodStoreThumbnail[to.row]
+//        foodStoreThumbnail[to.row] = foodStoreThumbnail[fromIndexPath.row]
+//        foodStoreThumbnail[fromIndexPath.row] = tmp2
+//
+//
+//
+//
+//    }
     
 
     /*
