@@ -102,12 +102,23 @@ class MyTableViewController: UITableViewController {
     }
     
 
-    /*
+    
     // Override to support rearranging the table view.
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
 
+        let tmp1 = foodStoreNames[to.row]
+        foodStoreNames[to.row] = foodStoreNames[fromIndexPath.row]
+        foodStoreNames[fromIndexPath.row] = tmp1
+        
+        let tmp2 = foodStoreThumbnail[to.row]
+        foodStoreThumbnail[to.row] = foodStoreThumbnail[fromIndexPath.row]
+        foodStoreThumbnail[fromIndexPath.row] = tmp2
+        
+    
+
+
     }
-    */
+    
 
     /*
     // Override to support conditional rearranging of the table view.
