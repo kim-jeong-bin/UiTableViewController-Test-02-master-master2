@@ -14,7 +14,19 @@ class MyTableViewController: UITableViewController {
         self.title = "배달의 DIT"
     }
 
-
+    
+    
+    @IBAction func editTable(_ sender: Any) {
+        tableView.isEditing = true
+    }
+    
+    
+    @IBAction func nonEditTable(_ sender: Any) {
+        tableView.isEditing = false
+    }
+    
+    
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
