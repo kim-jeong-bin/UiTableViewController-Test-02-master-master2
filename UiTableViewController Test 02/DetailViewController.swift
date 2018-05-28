@@ -11,13 +11,16 @@ import UIKit
 class DetailViewController: UIViewController {
 
     @IBOutlet weak var cellImageView: UIImageView!
+    @IBOutlet weak var loca: UILabel!
+    @IBOutlet weak var telNum: UILabel!
+    var telNum2 : String = ""
+    var loca2 : String = ""
     var cellImage: String = ""
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         cellImageView.image = UIImage(named: cellImage)
-        
-        
+        telNum.text = telNum2
+        loca.text = loca2
         // Do any additional setup after loading the view.
     }
 

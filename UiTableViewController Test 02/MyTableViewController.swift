@@ -145,6 +145,15 @@ class MyTableViewController: UITableViewController {
                 destinationController.cellImage = foodStoreThumbnail[indexPath.row]
                 
                 //사진 넘기기
+                
+               destinationController.telNum2 = foodStoreTel[indexPath.row]
+                
+                //번호 넘기기
+                
+                destinationController.loca2 = foodStoreAddress[indexPath.row]
+                
+                //주소 넘기기
+                
             }
         }
     }
