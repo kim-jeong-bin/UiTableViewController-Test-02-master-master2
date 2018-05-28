@@ -100,20 +100,31 @@
             </objects>
             <point key="canvasLocation" x="960.79999999999995" y="59.820089955022496"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="pGl-c3-ZJz">
             <objects>
-                <viewController id="NBH-IU-gkH" sceneMemberID="viewController">
+                <viewController id="NBH-IU-gkH" customClass="DetailViewController" customModule="UiTableViewController_Test_02" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UYI-KM-rDB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01" translatesAutoresizingMaskIntoConstraints="NO" id="Qgf-fx-Kro">
+                                <rect key="frame" x="0.0" y="64" width="375" height="291"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Qgf-fx-Kro" firstAttribute="trailing" secondItem="nTX-zn-Ua1" secondAttribute="trailing" id="2EA-7F-9Gy"/>
+                            <constraint firstItem="Qgf-fx-Kro" firstAttribute="leading" secondItem="nTX-zn-Ua1" secondAttribute="leading" id="Yj4-0m-xOE"/>
+                            <constraint firstItem="nTX-zn-Ua1" firstAttribute="bottom" secondItem="Qgf-fx-Kro" secondAttribute="bottom" constant="312" id="gif-4g-ahj"/>
+                            <constraint firstItem="Qgf-fx-Kro" firstAttribute="top" secondItem="nTX-zn-Ua1" secondAttribute="top" id="pGS-Jn-zoC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="nTX-zn-Ua1"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4G5-on-24P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1719" y="60"/>
+            <point key="canvasLocation" x="1717.5999999999999" y="59.820089955022496"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="STE-sq-WCd">
@@ -134,4 +145,7 @@
             <point key="canvasLocation" x="192" y="60.26986506746627"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="01" width="800" height="800"/>
+    </resources>
 </document>

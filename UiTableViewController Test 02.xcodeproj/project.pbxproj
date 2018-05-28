@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1424BAEF20BBDA7400BE6E10 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1424BAEE20BBDA7400BE6E10 /* DetailViewController.swift */; };
 		741C17E520AC061400FE6E1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741C17E420AC061400FE6E1E /* AppDelegate.swift */; };
 		741C17EA20AC061400FE6E1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 741C17E820AC061400FE6E1E /* Main.storyboard */; };
 		741C17EC20AC061400FE6E1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 741C17EB20AC061400FE6E1E /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1424BAEE20BBDA7400BE6E10 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		741C17E120AC061400FE6E1E /* UiTableViewController Test 02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UiTableViewController Test 02.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		741C17E420AC061400FE6E1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		741C17E920AC061400FE6E1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,6 +42,7 @@
 		741C17D820AC061400FE6E1E = {
 			isa = PBXGroup;
 			children = (
+				1424BAEE20BBDA7400BE6E10 /* DetailViewController.swift */,
 				741C17E320AC061400FE6E1E /* UiTableViewController Test 02 */,
 				741C17E220AC061400FE6E1E /* Products */,
 			);
@@ -142,6 +145,7 @@
 				741C17E520AC061400FE6E1E /* AppDelegate.swift in Sources */,
 				7429401420B29D5C0047FB95 /* FoodStoreTableViewCell.swift in Sources */,
 				741C17F720AC06C400FE6E1E /* MyTableViewController.swift in Sources */,
+				1424BAEF20BBDA7400BE6E10 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
