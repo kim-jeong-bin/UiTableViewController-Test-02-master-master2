@@ -41,7 +41,21 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let  cell = tableView.dequeueReusableCell(withIdentifier: "detailCell", for: indexPath)
+        
+        
+        if indexPath.row == 0 {
+            cell.textLabel?.text = "주소 :" + loca2
+            return cell
+        } else if indexPath.row == 1 {
+            cell.textLabel?.text = "전화번호 :" + telNum2
+            return cell
+        } else {
+            cell.textLabel?.text = "메뉴 :" + menu
+            return cell
+        }
+        
+       
     }
     
     

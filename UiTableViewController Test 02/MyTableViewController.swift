@@ -161,6 +161,10 @@ class MyTableViewController: UITableViewController {
                 
                 //주소 넘기기
                 
+                destinationController.menu = foodMenus[indexPath.row]
+                
+                //메뉴 넘기기
+                
             }
         }
     }
