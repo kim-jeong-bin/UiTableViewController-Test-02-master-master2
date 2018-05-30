@@ -8,22 +8,44 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var detailTableView: UITableView!
     @IBOutlet weak var cellImageView: UIImageView!
-    @IBOutlet weak var loca: UILabel!
-    @IBOutlet weak var telNum: UILabel!
+   
     var telNum2 : String = ""
     var loca2 : String = ""
     var cellImage: String = ""
+    var menu : String = ""
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         cellImageView.image = UIImage(named: cellImage)
-        telNum.text = telNum2
-        loca.text = loca2
+        detailTableView.delegate = self
+        detailTableView.dataSource = self
+        
+      
         // Do any additional setup after loading the view.
     }
 
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

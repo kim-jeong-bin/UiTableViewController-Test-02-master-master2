@@ -111,25 +111,19 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01" translatesAutoresizingMaskIntoConstraints="NO" id="Qgf-fx-Kro">
                                 <rect key="frame" x="0.0" y="64" width="375" height="291"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAD-lA-SKs">
-                                <rect key="frame" x="65" y="540" width="279" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZh-0q-qEp">
-                                <rect key="frame" x="65" y="452" width="279" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZxV-78-eId">
+                                <rect key="frame" x="0.0" y="355" width="375" height="312"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Qgf-fx-Kro" firstAttribute="trailing" secondItem="nTX-zn-Ua1" secondAttribute="trailing" id="2EA-7F-9Gy"/>
+                            <constraint firstItem="ZxV-78-eId" firstAttribute="bottom" secondItem="nTX-zn-Ua1" secondAttribute="bottom" id="6dU-hT-TTB"/>
+                            <constraint firstItem="ZxV-78-eId" firstAttribute="trailing" secondItem="nTX-zn-Ua1" secondAttribute="trailing" id="F8l-x2-VHR"/>
                             <constraint firstItem="Qgf-fx-Kro" firstAttribute="leading" secondItem="nTX-zn-Ua1" secondAttribute="leading" id="Yj4-0m-xOE"/>
+                            <constraint firstItem="ZxV-78-eId" firstAttribute="top" secondItem="Qgf-fx-Kro" secondAttribute="bottom" id="cwj-oh-27a"/>
+                            <constraint firstItem="ZxV-78-eId" firstAttribute="leading" secondItem="nTX-zn-Ua1" secondAttribute="leading" id="fyR-5c-Rbr"/>
                             <constraint firstItem="nTX-zn-Ua1" firstAttribute="bottom" secondItem="Qgf-fx-Kro" secondAttribute="bottom" constant="312" id="gif-4g-ahj"/>
                             <constraint firstItem="Qgf-fx-Kro" firstAttribute="top" secondItem="nTX-zn-Ua1" secondAttribute="top" id="pGS-Jn-zoC"/>
                         </constraints>
@@ -137,8 +131,7 @@
                     </view>
                     <connections>
                         <outlet property="cellImageView" destination="Qgf-fx-Kro" id="yhP-wM-toV"/>
-                        <outlet property="loca" destination="CZh-0q-qEp" id="fu7-bJ-Gt6"/>
-                        <outlet property="telNum" destination="TAD-lA-SKs" id="xLw-ly-M7S"/>
+                        <outlet property="detailTableView" destination="ZxV-78-eId" id="Hq0-ff-0oM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4G5-on-24P" userLabel="First Responder" sceneMemberID="firstResponder"/>
